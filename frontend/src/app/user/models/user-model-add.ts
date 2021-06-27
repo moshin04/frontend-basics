@@ -1,9 +1,12 @@
-export class Usermodel {
-    email: string;
-    password: string;
+export class Useraddmodel {
+    username?: String;
+    email?: String;
+    password?: String;
+    role?: String;
+    status?: String;
 
     constructor() {
-        this.email = '';
+        this.username = '';
         this.password = '';
     }
 }

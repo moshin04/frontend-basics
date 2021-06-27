@@ -1,1 +1,21 @@
-<p>user-add works!</p>
+<div class="container">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" name="username" [(ngModel)]="usermodel.username" required>
+    </div>
+    <div class="input-group mb-3">
+        <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="usermodel.email" required>
+    </div>
+    <div class="input-group mb-3">
+        <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="usermodel.password" required>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Role" name="role" [(ngModel)]="usermodel.role" required>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Status" name="status" [(ngModel)]="usermodel.status" required>
+    </div>
+    <button (click)="onSubmit()" class="btn btn-primary">Submit</button>
+</div>
+
+
+

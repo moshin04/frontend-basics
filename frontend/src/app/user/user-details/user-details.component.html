@@ -1,1 +1,30 @@
-<p>user-details works!</p>
+<div class="container">
+  <div class="float-end p-2">
+  <button class="btn btn-primary" type="button" (click)="AddbtnClick()">Add</button>
+</div><br>  
+  <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Moshin</td>
+            <td>Gachinmal</td>
+            <td>
+                <div class="d-grid gap-2 d-md-flex justify-content-md">
+                    <button class="btn btn-primary" type="button" (click)="EditbtnClick()">Edit</button>
+                    <button class="btn btn-primary" type="button" (click)="DeletebtnClick()">Delete</button>
+
+                </div>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
